@@ -1,0 +1,123 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #547980;
+    font-size: 18px;
+}
+
+body {
+    text-align: center;
+}
+    a {
+        text-decoration: none;
+        color: #39585f;
+    }
+
+    .wrapper {
+        min-height: 100%;
+    }
+        .header {
+            background: #E5FCC2;
+            padding: 1%;
+            margin-bottom: 1%;
+            text-align: left;
+        }
+            .logo {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header h1 {
+                margin: 0;
+            }
+    .navigation {
+        background: #45ADA8;
+    }
+        .nav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0 1% 0 1%;
+        }
+            .nav-item {
+                display: inline-block;
+                font-size: 20px;
+                height: 100%;
+                padding: 0.5% 1% 0.5% 1%;
+            }
+            .nav-item:hover {
+                background:#9DE0AD ;
+            }
+    .main {
+        background: #9DE0AD;
+        padding: 1%;
+    }
+
+        .main h2 {
+            padding-top: 0.5%;
+        }
+
+        .weather-container {
+            display: table;
+            margin: 0 auto;
+        }
+            .current {
+                font-size: 24px;
+            }
+
+            .weather {
+                padding: 0.5%;
+                display: table-cell;
+                vertical-align: middle;
+                width: 22%;
+            }
+                .weather:hover {
+                    background: #E5FCC2;
+                }
+                    .weather:hover .weather-img {
+                        animation: image-rotation 2s;
+                    }
+                    @keyframes image-rotation {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        25% {
+                            transform: rotate(45deg);
+                        }
+                        75% {
+                            transform: rotate(-45deg);
+                        }
+                    }
+            .weather-info {
+                padding: 0.5%;
+                vertical-align: middle;
+            }
+                dt, dd {
+                    display: inline;
+                    margin: 0;
+                }
+
+                    dd:after {
+                        content: '\A';
+                        white-space: pre;
+                    }
+        .hFooter {
+            height: 4%;
+        }
+    .footer {
+        background: #45ADA8;
+        margin-top: -4%;
+        padding: 0.5%;
+    }
+        .copyright {
+            height: 100%;
+            vertical-align: middle;
+        }
+
+@media screen and (max-width: 1023px) {
+    body{
+        width: 1024px;
+    }
+
+}
